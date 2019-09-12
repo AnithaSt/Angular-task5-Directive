@@ -1,0 +1,101 @@
+<div class="header text-center text-white" id="head">
+  <h1><br>Angular Directives</h1>
+  <button type="submit" routerLink="/ngfor" class="mr-3 mt-5 button1">Ngfor </button>
+  <button type="submit" routerLink="/ngif" class="mr-3 mt-5 button1">Ngif </button>  
+  <button type="submit" routerLink="/ngswitch" class="mt-3 mb-4 button1" >Ngswitch</button>
+  </div>
+  <div class="container-fluid ">
+    <div class="row text-center">
+      <div class="col-lg-5 col-md-5 col-sm-5"></div>
+      <div class="col-lg-2 col-md-2 col-sm-2 ">
+        
+          <select #select (change)="change(select.value)" class="mt-5  bg-warning form-control"  >
+            <option>select</option>
+            <option value="1">About</option>
+            <option value="2">Service</option>
+            <option value="3">Contact</option>
+          </select>
+        
+      </div>
+      <div class="col-lg-5 col-md-5 col-sm-5" ></div>
+    </div>
+  </div>
+  <div *ngIf="page==1">
+  <div class="bg-white">
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-lg-12 col-md-12 col-sm-12 mt-4">
+          <h2>Upcoming university events</h2>
+          <p>From a group of academic pioneers in 1901 to the Free Speech Movement in 1964, Bridge University.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="bg-white">
+        <div class="container-fluid">
+        <div class="row pl-3 pr-3">
+          <div class="col-lg-3 col-md-6 col-sm-12 pl-0 pr-0">
+            <img src="/assets/study1.jpg" alt="study" class="imga">
+            <img src="/assets/study5.jpg" alt="study" class="imga">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 pl-0 pr-0 ">
+            <img src="/assets/study2.jpg" alt="study" class="imga ">
+            <img src="/assets/study6.jpg" alt="study" class="imga">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 pl-0 pr-0 ">
+            <img src="/assets/study3.jpg" alt="study" class="imga">
+            <img src="/assets/study7.jpg" alt="study" class="imga">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 pl-0 pr-0 mb-5">
+            <img src="/assets/study4.jpg" alt="study" class="imga">
+            <img src="/assets/study8.jpg" alt="study" class="imga">
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+  <div class="bg-white" *ngIf="page==2"> 
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 mt-5">
+            <img src="/assets/student.jpg"class="img" >
+            <h5 class="mt-3">Services for Students</h5>
+            <div class="separator  small left  " ></div>
+            <p>Lorem ipsum dolor sit amet, feugiat delicata isis liberavisse id cumisit.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 mt-5">
+            <img src="/assets/classroom.jpg" class="img">
+            <h5 class="mt-3">Lean in, Speak out</h5>
+            <div class="separator  small left  " ></div>
+            <p>Lorem ipsum dolor sit amet, feugiat delicata isis liberavisse id cumisit.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 mt-5">
+            <img src="/assets/building.jpg" class="img">
+            <h5 class="mt-3">Welcome to Campus</h5>
+            <div class="separator  small left  " ></div>
+            <p>Lorem ipsum dolor sit amet, feugiat delicata isis liberavisse id cumisit.</p>
+        </div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="bg-white" *ngIf="page==3">
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="col-lg-6 col-md-12 col-sm-12 mt-4">
+          <h4>Say Hello</h4>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p>
+          <p>erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla.</p>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+            <input type="text" name="Name"  placeholder="Name" class="input">
+            <input type="text" name="E-Mail" placeholder="E-Mail" class="input">
+            <input type="text" name="Subject"  placeholder="Subject" class="input">
+            <textarea type="text" name="Massage" placeholder="Message" class="inputa mb-3"></textarea>
+            <button type="button" class="buttaa mb-5"><b class="para">SEND</b></button>
+        </div>
+      </div>
+    </div>
+    </div>
+  <div class="footer  text-center mt-5" id="head">@angulardirectives<br><br></div>
+  

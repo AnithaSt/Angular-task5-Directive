@@ -1,0 +1,32 @@
+<div class="header text-center text-white" id="head">
+  <h1><br>Angular Directives</h1>
+  <button type="submit" routerLink="/ngfor" class="mr-3 mt-5 button1">Ngfor </button>
+  <button type="submit" routerLink="/ngif" class="mr-3 mt-5 button1">Ngif </button> 
+  <button type="submit" routerLink="/ngswitch" class="mt-3 mb-4 button1" >Ngswitch</button>
+  </div>
+  <div class="contaniner-fluid back">
+    <div class="container">
+    <div class="row">
+    <div class="col-lg-4 col-md-4"></div>
+      <div class="col-lg-4 col-md-4 mar">
+          <select [(ngModel)]="type" class="form-control bg-warning mr-5 text-white">
+              <option [value]="1">First</option>
+              <option [value]="2">Second</option>
+              <option [value]="3">Third</option>
+              <option [value]="4">Fourth</option>
+              <option [value]="33">0ther</option>
+          </select>
+          <div [ngSwitch]="type" class="text-white text-center">
+            <h3 *ngSwitchCase="1">Sudha</h3>
+            <h3 *ngSwitchCase="2">Anitha</h3>
+            <h3 *ngSwitchCase="3">Manju</h3>
+            <h3 *ngSwitchCase="4">Mooventhira</h3>
+            <h3 *ngSwitchDefault>Defalt</h3>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-4"></div>
+    </div>
+  </div>
+</div>
+  <div class="footer  text-center " id="head">@angulardirectives<br><br></div>
+  <router-outlet></router-outlet>

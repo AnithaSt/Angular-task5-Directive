@@ -1,0 +1,49 @@
+#head{
+    background-color: #f01657;
+}
+h1 {
+    color: rgb(184, 224, 9);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+.button1{
+    background-color: rgb(93, 201, 21);
+    border-color: rgb(93, 201, 21);
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    color: white   
+}
+
+
+.input{
+    width: 100%;
+    background-color: #f4f4f4;
+    border: 1px solid #f4f4f4;			
+    padding: 7px;
+    margin-top: 20px;
+}
+.inputa{
+    width: 100%;
+    background-color: #f4f4f4;
+    border: 1px solid #f4f4f4;			
+    height: 200px;
+    margin-top: 20px;
+}
+.buttaa{
+    background-color: #244b5c;
+    color: white;
+    border: none;
+    width: 130px;
+    height: 40px;
+}
+.para{
+    font-size: 12px;
+}
+.imga{
+    width:100%;
+    height: 170px;
+}
+select{
+    width: 140px;
+    height: 40px;
+}
